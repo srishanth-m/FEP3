@@ -58,6 +58,7 @@ html , body{
 }
 
 #nav a {
+    display: inline-block;
     text-decoration: none;
     color: black;
 }
@@ -80,6 +81,8 @@ html , body{
     width: 100%;
     margin-top: 12.5vw;
     padding: 0vw 10vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 #sustain{
@@ -109,4 +112,250 @@ html , body{
     height: 120%;
     width: 120%;
     object-fit: cover;
+}
+
+#ephemeral{
+    position: relative;
+    width: 30vw;
+    min-height: 42vw;
+}
+
+#ephemeral h1 {
+    font-size: 6vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: -.4vw;
+    line-height: 1;
+}
+
+#ephemeral #headings{
+    position : absolute;
+    top: -21%;
+    left: -17%;
+}
+
+#ephemeral img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#imgntext{
+    width: fit-content;
+    height: fit-content;
+}
+
+#visit{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#visit h3{
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#visit #circlev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    border: 1px solid black;
+    border-radius: 100px;
+    font-size: 2vw;
+}
+
+#ephemeral p{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    opacity: .7;
+    width: 60%;
+    text-transform: capitalize;
+}
+
+#motive{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 10vw;
+}
+
+#motive span{
+    display: inline-block;
+    background-color: rgb(153, 51, 51);
+    border-radius: 50px;
+    margin: 0px 10px;
+    margin-bottom: -10px;
+}
+
+#onespan{
+    width: 80px;
+    height: 40px;
+    background-image: url(./images/bluegirl.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#twospan{
+    width: 120px;
+    height: 40px;
+    background-image: url(./images/shaljam.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#threespan{
+    width: 80px;
+    height: 40px;
+    background-image: url(./images/grass.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#motive p{
+    position: relative;
+    right: 0;
+    width: 80%;
+    text-align: right;
+    font-size: 2vw;
+    letter-spacing: -.1vw;
+    line-height: 1.7;
+}
+
+#pictures{
+    margin-top: 5vw;
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#first{
+    width: 17vw;
+}
+
+#first #firstimg{
+    width: 100%;
+    height: 22vw;
+    background-color: red;
+    margin-bottom: 1vw;
+}
+
+#firstimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#first p , #second p{
+    font-size: 1.2vw;
+    opacity: .8;
+    margin-top: 10px;
+}
+
+#first h1 , #second h1{
+    font-size: 2.2vw;
+    letter-spacing: .05vw;
+}
+
+#second{
+    width: 22vw;
+    text-align: right;
+}
+
+#second #secondimg{
+    width: 100%;
+    height: 32vw;
+    margin-bottom: 1vw;
+}
+
+#secondimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#banner{
+    width: 100%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+#bimg{
+    min-width: 60%;
+    height: 65vh;
+}
+
+#bimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+
+#btext{
+    width: 35%;
+    padding: 0vw 3vw;
+}
+
+#btext h1{
+    line-height: 1;
+    letter-spacing: -.05vw;
+    font-size: 2.6vw;
+    opacity: .8;
+}
+
+#btext p{
+    margin-top: 20px;
+    width: 100%;
+}
+
+#future{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+   overflow: hidden;
+   text-transform: capitalize;
+   background-color: white;
+}
+
+#future video{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#ftext{
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 20px;
+}
+
+#ftext button{
+    margin-top: 1vw;
+    padding: 1vw 1.2vw;
+    letter-spacing: -.05vw;
+    font-size: 1.3vw;
+    border-radius: 100px;
+    border: 1px solid #b0b0b0;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 600;
+    text-transform: capitalize;
 }
